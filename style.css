@@ -1,0 +1,477 @@
+/* --- STYLES CSS --- */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- ESTILOS PARA LA NAVBAR */
+.navbar {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: -10px; /* Ajustamos el margen superior para toda la navbar */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* --- ESTILOS PARA EL LOGO */
+/* Estilos para el logo */
+.logo-container {
+    margin-top: 0px; /* Ajusta el margen superior para el contenedor del logo */
+}
+
+.rudimental-logo {
+  width: 160px; /* 250px --- Tamaño deseado en píxeles */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  margin-left: 10px; /* 20px --- Margen desde el lado izquierdo pared hasta el centro de la navbar */
+  margin-right: -245px; /* UFFF DIOS LA BENDITA PROPIEDAS CSS QUE ME SALVO DEL SUICIDIO PARA PODER AJUSTAR BIEN LOS ITEMS DE LA NAVBAS VARIOS DIAS HECHANDOLE CABEZA A ESTO PARA CENTRAR TODOS LOS ITEMS DE MI NAVEGACION */
+  margin-top: 20px; /*  MARGEN DEL TECHO A LA POSICION DESEADA */
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Añadimos la fuente Roboto */
+}
+
+.navbar ul li {
+    margin-left: 56px; /* Espaciado entre items */
+    font-family: var(--sans), sans-serif; /* Cambia 'var(--sans)' por la fuente deseada *//* Fuente para los items de la Navbar*/
+    font-size: 17px; /* Tamaño de la fuente de los intems de la navbar */
+    top: 8px;
+    /*left: -100px /* CENTRA LOS ELEMENTOS EN EL NAVBAR PERO DESCUADRA LOS SUBMENUS */
+}
+
+.navbar ul li a {
+    color: #f5f5f5; /* Color letra de los items */
+    text-decoration: none;
+    font-family: var(--sans), sans-serif; /* Cambia 'var(--sans)' por la fuente deseada *//* Añadimos la fuente Roboto */
+    font-weight: 500; /* Añade un poco de peso a la fuente */
+    font-size: 17px;
+}
+
+/* Estilos predeterminados para la versión de escritorio */
+.navbar .mobile-nav {
+    display: none;
+}
+
+
+/* Estilos para el icono de flecha hacia abajo */
+.arrow-icon {
+    display: inline-block;
+    width: 14px; /* Tamaño dle Icono */
+    height: 14px; /* Tamaño dle Icono */
+    background-image: url('img/down-arrow.png'); /* Ruta a la imagen del icono */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0px; /* -3px Espacio entre el texto y el icono */
+    vertical-align: middle; /* Alinea verticalmente el contenido con respecto al texto */
+}
+
+/* Agrega un estilo especial al ícono cuando el cursor esté sobre el enlace */
+.navbar ul li:hover .arrow-icon {
+    transform: rotate(180deg); /* Voltea la flecha hacia arriba cuando el cursor esté sobre el enlace */
+}
+
+/* Muestra el submenú cuando el cursor esté sobre el enlace */
+.navbar ul li:hover .sub-menu {
+    display: block;
+}
+
+
+/* Estilos para el icono de flecha hacia arriba de saltar al otra pagina */
+.jump-up {
+    display: inline-block;
+    width: 10px; /* 8px Tamaño del Icono */
+    height: 10px; /* 8px Tamaño del Icono */
+    background-image: url('img/up-right-arrow.png'); /* Ruta a la imagen del icono */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px; /* 3px Espacio entre el texto y el icono */
+    vertical-align: middle; /* Alinea verticalmente el contenido con respecto al texto */
+}
+
+/* Estilos para el subrayado en hover */
+.navbar ul li a:hover {
+    text-decoration: underline; /* Agrega subrayado al enlace cuando el cursor esté sobre él */
+}
+
+
+/*---- ESTILOS PARA EL MENU DROPDOWN -----*/
+/* Estilos para el menú "drop-down" */
+.navbar .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -16px; /* 16PX DE ARRIBA A BAJO DESDE LA PALABRA RESEARCH A LA PALABRA DEVELOPMENT, AJUSTA VERTICALMENTE A LA IZQUIERDA QUE LA PRIMERA LETRA ENCAJE CON LA PRIMERA LETRA DE ABAJOD EL SUBMENU */
+    background-color: transparent;
+    padding: 10px;
+    z-index: 999;
+}
+
+.navbar .sub-menu li {
+    margin: -8px 0; /* Cambia este valor para ajustar el espacio vertical entre los ítems */
+    padding: 8px;
+    list-style: none;
+}
+
+.navbar .sub-menu {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+/* Mostrar el sub-menú "drop-down" cuando se hace hover en el enlace padre */
+.navbar ul li {
+    position: relative; /* Agregamos esta propiedad para que el menú desplegable esté relativo al enlace padre */
+}
+
+.navbar ul li:hover .sub-menu {
+    display: block;
+}
+
+/* Estilos para el sub-jump-up en los submenús */
+.navbar .sub-menu .sub-jump-up {
+    display: inline-block;
+    width: 10px; /* 8px Tamaño del Icono */
+    height: 10px; /* 8px Tamaño del Icono */
+    background-image: url('img/up-right-arrow.png'); /* Ruta a la imagen del icono */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px; /* Espacio entre el enlace y el icono */
+    vertical-align: middle; /* Alinea verticalmente el icono con respecto al texto */
+    transition: transform 0.2s ease; /* Transición para la animación del icono */
+}
+
+/* Cambiar el color del sub-jump-up en hover */
+.sub-jump-up:hover {
+    filter: brightness(1.2); /* Ajusta el brillo del icono en hover */
+}
+
+
+
+/* ------ HAMBURGER MENU -----*/
+/* Estilos menú hamburguesa */
+.hamburger {
+    margin-right: 42px; /* margen entre la pared y el centro para el menu hamburguesa */
+    /*top: 0px;  margen del techo al centro del navbar para el menu hamburguesa*/
+    cursor: pointer; /* Cambia el cursor a una mano con dedo apuntando */
+}
+
+.hamburger img {
+    width: 24px; /* Ancho del menu hamgurguesa*/
+    height: 24px; /* Altura del menu hamburgusa*/
+    transition: transform 0.2s ease; /* Agregamos una transición suave al cambio de tamaño */
+}
+
+/* Efecto de resaltado al acercar el cursor al icono */
+.hamburger img:hover {
+    transform: scale(1.1); /* Aumentamos el tamaño del icono al 110% (un 10% más grande) */
+}
+
+.hide-hamburger {
+  display: none;
+}
+
+
+ /* ----- SIDEBAR ---- */
+
+/* Estilos para el menú lateral (sidebar) */
+.sidebar {
+  display: none; /* none Hace que la sidebar se mantenga cerrada y no se habra hasta que no se clike en ella*/
+  position: fixed;
+  top: 0;
+  right: 0; /* Abre la sidebar desde la derecha */
+  width: 20%; /* /* 15% Ajusta el ancho de la ventana según sea necesario */
+  height: 100vh; /* Ajusta la altura del menú lateral según sea necesario */
+  /*background-color: rgba(0, 0, 128, 0.9); /* Fondo azul */
+  background-color: rgba(36, 34, 34, 0.329); /* Fondo azul */
+  color: #fff; /* Color de texto blanco */
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
+  padding-top: 0px; /* 40PX Ajusta el espaciado superior del menú lateral según sea necesario */
+  text-align: left; /* Ajusta el texto a la izquierda dentro de la sidebar*/
+}
+
+/* Estilos para el sub-jump-up en el enlace "Shop" */
+.sidebar ul li a .sub-jump-up {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('img/up-right-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+
+
+/* Cambiar el color del sub-jump-up en hover */
+.sidebar ul li:hover a .sub-jump-up {
+    filter: brightness(1.2);
+}
+
+
+/* ---- ESTILOS SUBMENU SIDEBAR ----- */
+/* Estilos para el submenu */
+/* Estilos para el submenu */
+/* Estilos para el menú "drop-down" */
+
+.sidebar .brands-submenu.brands-submenu-open {
+    display: block;
+}
+
+.sidebar .brands-submenu{
+    display: none;
+    margin: -8px 0; /* Ajusta la distancia  vertical de los elementos con respecto a Brands y Shop*/
+    padding: 8px;
+    list-style: none;
+    font-size: 14px;
+    padding-top: -55px; /* 40PX Ajusta el espaciado superior del menú lateral según sea necesario */
+    text-align: left; /* Ajusta el texto a la izquierda dentro de la sidebar*/
+}
+
+.sidebar .brands-submenu li {
+    margin: 4px 0; /* Ajusta el espacio vertical entre los ítems del submenu brands, DarkOpSec, Auroral, Alluniux <li/> */
+    padding: 8px;
+    list-style: none;
+}
+
+/* Estilos para los enlaces del submenú "Brands" */
+.sidebar .brands-submenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrow-icon-sidebar {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url('img/down-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -1px; /* Ajusta la distancia entre la flechita y el texto "Brands" */
+    vertical-align: middle;
+    transition: transform -0.2s ease;
+}
+
+.arrow-icon-flipped {
+    transform: rotate(180deg);
+}
+
+/* Cambiar el color del arrow-icon-sidebar en hover */
+.sidebar-sub-menu-item:hover .arrow-icon-sidebar {
+    filter: brightness(1.2);
+}
+
+/* Estilos para el ícono "jump-up" en los submenús */
+.sidebar .brands-submenu .sub-jump-up {
+    display: inline-block;
+    width: 10px; /* Ajusta el tamaño del ícono */
+    height: 10px; /* Ajusta el tamaño del ícono */
+    background-image: url('img/up-right-arrow.png'); /* Ruta a la imagen del ícono */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px; /* Espacio entre el enlace y el ícono */
+    vertical-align: middle; /* Alineación vertical con el texto */
+    transition: transform 0.2s ease; /* Transición para la animación del ícono */
+}
+
+/* Cambiar el color del ícono "jump-up" en hover */
+.sidebar .brands-submenu .sub-jump-up:hover {
+    filter: brightness(1.2); /* Ajusta el brillo del icono en hover */
+}
+
+/* --- SHOP STYLES --- */
+
+
+/*--- END END  -----*/
+
+
+
+/* Estilos para el ícono de cierre (close) */
+.close-icon {
+  display: block; /* Oculta el ícono de cierre por defecto */
+  width: 19px; /* Ajusta el tamaño del ícono según sea necesario */
+  height: 19px; /* Ajusta el tamaño del ícono según sea necesario */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar por el ícono de cierre */
+  position: absolute; /* Posicion del icono en la derecha */
+  margin-right: 20px; /* margen entre la pared y el centro para el menu hamburguesa */
+  top: 24px; /* Ajusta la posicion del icono de arriba hacia abajo */
+  right: 10px; /* Cambia la posición del ícono de cierre a la derecha */
+  background-color: transparent; /* Fondo transparente */
+  z-index: 2; /* Asegura que el ícono esté por encima de la sidebar */
+  transition: transform 0.2s ease; /* Agregamos una transición al estilo transform */
+}
+
+/* Estilos para el ícono de cierre (close) al pasar el cursor sobre él */
+.close-icon:hover {
+  transform: scale(1.1); /* Escalamos el botón un poco más al hacer hover */
+}
+
+/* Estilos para el ícono de cierre (close) cuando la sidebar está abierta */
+.sidebar-open .close-icon {
+  color: #fff; /* Cambia el color a blanco cuando la sidebar está abierta */
+}
+
+/* Estilos para los enlaces del menú lateral */
+.sidebar ul {
+  list-style: none; 
+  display: list-item; /* Hace que los items se muestren en una lista vertical */
+  padding: 0;
+  /*margin: 0; /* Altura de la lista de como viene por defecto*/
+  margin: 200px 0 0 0; /* Ajusta el margen superior según sea necesario */
+}
+
+.sidebar ul li {
+  display: list-item; /* Hace que los items se muestren en una lista vertical */  
+  padding: 10px;
+  font-size: 14px; /* Ajusta el tamaño de fuente de los items según sea necesario */
+  /*border-bottom: 1px solid #fff; /* Añade un borde inferior a cada item */
+}
+
+/* Estilos para mostrar el menú lateral cuando es necesario */
+.sidebar.show-sidebar {
+  display: block;
+}
+
+
+/* HERO SECTION  */
+/* Hero section */
+.hero {
+    background-image: url('img/bg-9.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 3%;
+    /* padding-top: 10vh; Ajusta la cantidad de espacio en la parte superior */
+    
+}
+
+/* -- ESTILOS HERO & H1,2 PORTADA LANDING --- */
+/* Estilos de la línea vertical (debajo del menú hamburguesa) */
+.line {
+    width: 2px; /* Ancho de la línea */
+    height: 120px; /* Altura de la línea */
+    background-color: #FFFFFF; /* Color de la línea */
+    position: absolute;
+    top: 85px; /* Ajusta esta propiedad para controlar la distancia vertical desde la parte superior de la sección hero */
+    right: 27px; /* Ajusta esta propiedad para controlar la distancia horizontal desde el borde derecho de la sección hero */
+    border-radius: 10px; /* Agrega bordes redondos */
+    transform: rotate(180deg); /* Gira la línea para que quede completamente vertical hacia abajo */
+}
+
+.hero h1 {
+    font-size: 75px;
+    margin-bottom: 20px;
+    font-family:  'Arial', 'Verdana', sans-serif;
+    margin: 05px; /* Ajusta el valor según sea necesario */
+    text-align: left;
+    margin-top: 17%; /* CON ESTA ETIQUETA AJUSTAMOS REALMENTE A QUE POSICION DE ARRIBA HACIA ABAJO QUEREMOS PONER EL TEXTO */
+}
+
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    /* font-family: 'Open Sans', sans-serif; */
+    /*font-family: 'Arial', 'Verdana', sans-serif;*/
+    font-family: "aktiv-grotesk-georgian",sans-serif;
+    color: #f8f9fa;
+    margin: 20px; /* Ajusta el valor según sea necesario */
+    text-align: left;
+    font-weight: normal;
+} 
+
+/*
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+} */
+
+.watch-more-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 30px;
+    font-size: 18px; /* default: 18px Poner el boton mas gordo */
+    /*font-weight: bold; */
+    /*font-family: sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'ArialNova', sans-serif; /* Fuente original para este boton */
+    font-family: 'Arial', 'Verdana', sans-serif;
+    /*font-family: 'Verdana', sans-serif;*/
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* letter-spacing: 0.5px; */
+    margin: 20px; /* Ajusta el valor según sea necesario */
+    text-align: left;
+}
+
+.watch-more-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Scroll down indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 20px; /* Ajusta esta propiedad para controlar la altura del ícono */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollAnimation 5s infinite; /* Cambiar la duración de la animación a 3 segundos */
+    /*width: 18px;  /* Ajustar el ancho del botón */
+    /*height: 18px;  /* Ajustar la altura del botón */
+}
+.scroll-down img {
+    width: 36px; /* Ajustar el ancho del botón */
+    height: 36px; /* Ajustar la altura del botón */
+    opacity: 1;
+}
+/* Definición de la animación */
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+/* ----- END OF LANDING & MAIN HERO SECTION ------ */
+
+/* Additional styling for other sections and elements */
+
+
+

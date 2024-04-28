@@ -1,0 +1,305 @@
+
+/* Estilos generales que aplicarán a todas las pantallas */
+
+/* Estilos para pantallas de hasta 768px (típicamente dispositivos móviles) */
+@media (max-width: 768px) {
+    .rudimental-logo {
+        width: 130px; /* Tamaño del logo en dispositivos móviles */
+        margin: 8px 0; /* Ajustar el margen superior e inferior del logo */
+    }
+
+
+    .hamburger {
+        display: block; /* Muestra el ícono del menú hamburguesa en dispositivos móviles */
+    }
+
+    .sidebar {
+        width: 60%; /* Ancho de la barra lateral en dispositivos móviles */
+        /* Aplicar relleno (padding) a la barra lateral para separarla de la pared izquierda */
+    }
+
+    .sidebar ul li  {
+    margin-bottom: -10px; /* Ajusta la cantidad de margen según sea necesario */
+    }
+
+    /* Cambia el tamaño de la imagen de fondo para que se adapte a dispositivos móviles */
+    .hero {
+        background-size: cover; /* La imagen de fondo se ajustará para cubrir todo el contenedor */
+        background-position: center; /* La imagen de fondo se centrará horizontalmente */
+    }
+
+    /* Cambia el tamaño de la imagen de fondo para que se adapte a dispositivos móviles */
+    .hero {
+        background-size: cover; /* La imagen de fondo se ajustará para cubrir todo el contenedor */
+        background-position: center; /* La imagen de fondo se centrará horizontalmente */
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero {
+        background-image: url('img/bg-2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        color: #ffffff;
+        /* text-align: left;  ALinea el texto a la izquierda */
+        padding-left: 3%;
+        padding-top: 10vh; /* Ajusta la cantidad de espacio en la parte superior */
+    }
+
+    /* Reduce el tamaño de la fuente del título del héroe en dispositivos móviles */
+    .hero h1 {
+        font-size: 45px; /* Ajusta el tamaño de fuente deseado */
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 22px; /* Ajusta el tamaño de fuente deseado */
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+
+
+/* Estilos para dispositivos móviles (pantallas más pequeñas o iguales a 768px) */
+@media (max-width: 768px) {
+    /* Estilos para los elementos en la barra lateral */
+    .sidebar .mobile-nav li {
+        margin: 8px 0;
+        padding: 8px;
+        list-style: none;
+    }
+    
+    .sidebar .mobile-nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+/* Estilos para dispositivos móviles (pantallas más pequeñas o iguales a 768px) */
+@media (max-width: 768px) {
+    /* Oculta los elementos de la barra de navegación principal */
+    .navbar ul {
+        display: none;
+    }
+    
+    /* Mostrar los elementos de la barra de navegación principal solo si el menú hamburguesa está activo */
+    .hamburger.active + .navbar ul {
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+   /* Cambia el tamaño de la imagen de fondo para que se adapte a dispositivos móviles */
+    .hero {
+        background-size: auto 100%; /* La imagen de fondo ocupará toda la altura de la pantalla */
+        background-position: center; 
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        /* background-size: contain; /* La imagen de fondo se ajustará para contener todo el contenido */ 
+        background-position: Center center; /* La imagen de fondo se centrará tanto vertical como horizontalmente */
+        background-repeat: no-repeat;
+        height: 100vh; /* Establece la altura del contenedor .hero al 100% de la altura de la ventana */
+    }
+}
+
+/* Cambia el orden en la versión móvil */
+@media (max-width: 768px) {
+    .navbar .mobile-nav {
+        order: 1; /* Cambia el orden para moverlos a la barra lateral */
+    }
+    .sidebar .mobile-nav {
+        display: block; /* Muestra los elementos en la barra lateral */
+        list-style: none;
+        padding: 0;
+    }
+    .sidebar .mobile-nav li {
+        margin: 8px 0;
+        padding: 8px;
+        list-style: none;
+    }
+    .sidebar .mobile-nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... Otros estilos responsive ... */
+  
+    /* Oculta inicialmente el submenú de marcas en la versión móvil */
+    .mobile-brands-submenu {
+      display: none;
+    }
+  
+    /* Muestra el submenú cuando la clase mobile-brands-submenu-open está presente */
+    .mobile-brands-submenu[class*="mobile-brands-submenu-open"] {
+      display: block;
+      margin-top: 8px; /* Ajusta la cantidad según sea necesario */
+    }
+
+    .sidebar-sub-menu-item .arrow-icon-sidebar a {
+    padding-left: 14px; /* Ajusta la cantidad de espacio según tus preferencias */
+    }
+  }
+
+
+@media (max-width: 768px) {
+/* Aplicar relleno (padding) a la barra lateral para separarla de la pared izquierda */
+.sidebar ul {
+    margin-left: 25px; /* Ajusta la cantidad de relleno según sea necesario */
+    margin-top: 100px;
+}
+/* Centrar el texto en los elementos de la barra lateral */
+.mobile-nav li,
+.sidebar li {
+    text-align: left;
+    margin-left: 25px; /* Ajusta el margen izquierdo según sea necesario */
+    top: 8px;
+}
+
+.mobile-nav li,
+.sidebar li {
+    text-align: left;
+    margin-left: 25px; /* Ajusta el margen izquierdo según sea necesario */
+    top: 8px;
+}
+
+/* Aumentar el espacio entre los elementos de la barra de navegación */
+.mobile-nav li,
+.sidebar li {
+    margin-bottom: 85px; /* Ajusta la cantidad según sea necesario */
+    margin-left: 25px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+/* Opcionalmente, también puedes centrar verticalmente el texto */
+.mobile-nav a,
+.sidebar a {
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: -10px;
+}
+
+/* Ajusta el margen superior de los elementos de "Brands" */
+.mobile-brands-submenu li {
+    font-size: 5px;
+    margin-top: 20px; /* Ajusta la cantidad según sea necesario */
+}
+
+/* Reducir el tamaño del icono de flecha hacia abajo en la barra lateral */
+.down-arrow-icon-mobile-sidebar {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('img/down-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px; /* Ajusta la distancia entre la flechita y el texto "Brands" */
+    vertical-align: middle;
+    transition: transform -0.2s ease;
+}
+
+.down-arrow-icon-mobile-flipped {
+    transform: rotate(180deg);
+}
+
+/* Cambiar el color del arrow-icon-sidebar en hover */
+.sidebar-sub-menu-item:hover .down-arrow-icon-mobile-sidebar {
+    filter: brightness(1.2);
+}
+
+.sub-jump-up-mobile-sidebar {
+    display: inline-block;
+    width: 8px; /* Ajusta el tamaño del ícono */
+    height: 8px; /* Ajusta el tamaño del ícono */
+    background-image: url('img/up-right-arrow.png'); /* Ruta a la imagen del ícono */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 3px; /* Espacio entre el enlace y el ícono */
+    vertical-align: middle; /* Alineación vertical con el texto */
+    transition: transform 0.2s ease; /* Transición para la animación del ícono */
+}
+
+/* Estilos para el submenú de Research en dispositivos móviles */
+.mobile-nav .sub-menu {
+    display: none; /* Oculta el submenú por defecto */
+}
+
+
+
+}
+
+
+
+/* ... Tus estilos existentes ... */
+
+/* Estilos para dispositivos móviles (pantallas más pequeñas o iguales a 768px) */
+@media (max-width: 768px) {
+    /* Aumenta el espacio entre los elementos de la barra de navegación */
+    .mobile-nav li,
+    .sidebar li {
+        margin-bottom: 20px; /* Ajusta la cantidad según sea necesario */
+    }
+
+    /* Ajusta el margen izquierdo de los elementos para centrarlos */
+    .mobile-nav a,
+    .sidebar a {
+        margin-left: 15px; /* Ajusta el margen izquierdo según sea necesario */
+    }
+
+    /* Aumenta el espacio entre los elementos de "Brands" */
+    .mobile-brands-submenu li {
+        margin-top: 10px; /* Ajusta la cantidad según sea necesario */
+    }
+
+    /* Redefine el tamaño del icono de flecha hacia abajo en la barra lateral */
+    .down-arrow-icon-mobile-sidebar {
+        width: 10px; /* Ajusta el tamaño según sea necesario */
+        height: 10px; /* Ajusta el tamaño según sea necesario */
+        margin-left: 5px; /* Ajusta la distancia entre la flecha y el texto "Brands" */
+    }
+
+    /* Estilos para el submenú de Research en dispositivos móviles */
+    .mobile-nav .sub-menu {
+        display: none; /* Oculta el submenú por defecto */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
