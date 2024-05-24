@@ -20,7 +20,6 @@ body {
 }
 
 /* --- ESTILOS PARA EL LOGO */
-/* Estilos para el logo */
 .logo-container {
     margin-top: 0px; /* Ajusta el margen superior para el contenedor del logo */
 }
@@ -49,7 +48,6 @@ body {
     font-family: var(--sans), sans-serif; /* Cambia 'var(--sans)' por la fuente deseada *//* Fuente para los items de la Navbar*/
     font-size: 17px; /* Tamaño de la fuente de los intems de la navbar */
     top: 8px;
-    /*left: -100px /* CENTRA LOS ELEMENTOS EN EL NAVBAR PERO DESCUADRA LOS SUBMENUS */
 }
 
 .navbar ul li a {
@@ -336,7 +334,6 @@ body {
 
 
 /* HERO SECTION  */
-/* Hero section */
 .hero {
     background-image: url('img/bg-9.jpeg');
     background-size: cover;
@@ -377,8 +374,6 @@ body {
 .hero h2 {
     font-size: 24px;
     margin-bottom: 30px;
-    /* font-family: 'Open Sans', sans-serif; */
-    /*font-family: 'Arial', 'Verdana', sans-serif;*/
     font-family: "aktiv-grotesk-georgian",sans-serif;
     color: #f8f9fa;
     margin: 20px; /* Ajusta el valor según sea necesario */
