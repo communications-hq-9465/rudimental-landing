@@ -162,7 +162,6 @@ body {
 /* Estilos menú hamburguesa */
 .hamburger {
     margin-right: 42px; /* margen entre la pared y el centro para el menu hamburguesa */
-    /*top: 0px;  margen del techo al centro del navbar para el menu hamburguesa*/
     cursor: pointer; /* Cambia el cursor a una mano con dedo apuntando */
 }
 
@@ -192,7 +191,6 @@ body {
   right: 0; /* Abre la sidebar desde la derecha */
   width: 20%; /* /* 15% Ajusta el ancho de la ventana según sea necesario */
   height: 100vh; /* Ajusta la altura del menú lateral según sea necesario */
-  /*background-color: rgba(0, 0, 128, 0.9); /* Fondo azul */
   background-color: rgba(36, 34, 34, 0.329); /* Fondo azul */
   color: #fff; /* Color de texto blanco */
   font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
@@ -214,17 +212,10 @@ body {
 }
 
 
-
 /* Cambiar el color del sub-jump-up en hover */
 .sidebar ul li:hover a .sub-jump-up {
     filter: brightness(1.2);
 }
-
-
-/* ---- ESTILOS SUBMENU SIDEBAR ----- */
-/* Estilos para el submenu */
-/* Estilos para el submenu */
-/* Estilos para el menú "drop-down" */
 
 .sidebar .brands-submenu.brands-submenu-open {
     display: block;
@@ -336,7 +327,6 @@ body {
   display: list-item; /* Hace que los items se muestren en una lista vertical */  
   padding: 10px;
   font-size: 14px; /* Ajusta el tamaño de fuente de los items según sea necesario */
-  /*border-bottom: 1px solid #fff; /* Añade un borde inferior a cada item */
 }
 
 /* Estilos para mostrar el menú lateral cuando es necesario */
@@ -359,8 +349,6 @@ body {
     color: #ffffff;
     text-align: left;
     padding-left: 3%;
-    /* padding-top: 10vh; Ajusta la cantidad de espacio en la parte superior */
-    
 }
 
 /* -- ESTILOS HERO & H1,2 PORTADA LANDING --- */
@@ -398,19 +386,6 @@ body {
     font-weight: normal;
 } 
 
-/*
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-
-} */
-
 .watch-more-btn {
     display: inline-block;
     background-color: transparent;
@@ -418,17 +393,9 @@ h2 {
     border: 2px solid #ffffff;
     padding: 10px 30px;
     font-size: 18px; /* default: 18px Poner el boton mas gordo */
-    /*font-weight: bold; */
-    /*font-family: sans-serif;*/
-    /*font-family: 'Roboto', sans-serif;*/
-    /*font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'ArialNova', sans-serif; /* Fuente original para este boton */
     font-family: 'Arial', 'Verdana', sans-serif;
-    /*font-family: 'Verdana', sans-serif;*/
     text-decoration: none;
     transition: all 0.3s ease;
-    /* letter-spacing: 0.5px; */
     margin: 20px; /* Ajusta el valor según sea necesario */
     text-align: left;
 }
@@ -445,8 +412,6 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     animation: scrollAnimation 5s infinite; /* Cambiar la duración de la animación a 3 segundos */
-    /*width: 18px;  /* Ajustar el ancho del botón */
-    /*height: 18px;  /* Ajustar la altura del botón */
 }
 .scroll-down img {
     width: 36px; /* Ajustar el ancho del botón */
@@ -472,6 +437,7 @@ h2 {
 /* ----- END OF LANDING & MAIN HERO SECTION ------ */
 
 /* Additional styling for other sections and elements */
+
 
 
 
