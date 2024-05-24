@@ -8,7 +8,6 @@
         margin: 8px 0; /* Ajustar el margen superior e inferior del logo */
     }
 
-
     .hamburger {
         display: block; /* Muestra el ícono del menú hamburguesa en dispositivos móviles */
     }
@@ -133,6 +132,48 @@
     }
 }
 
+
+/* RESEARCH */
+@media (max-width: 768px) {
+    /* ... Otros estilos responsive ... */
+  
+    /* Oculta inicialmente el submenú de marcas en la versión móvil */
+    .mobile-research-submenu {
+      display: none;
+    }
+  
+    /* Muestra el submenú cuando la clase mobile-brands-submenu-open está presente */
+    .mobile-research-submenu.mobile-research-submenu-open {
+      display: block;
+      margin-top: 8px; /* Ajusta la cantidad según sea necesario */
+    }
+
+    .sidebar-sub-menu-item .arrow-icon-sidebar a {
+    padding-left: 14px; /* Ajusta la cantidad de espacio según tus preferencias */
+    }
+  }
+
+/* SOLUTIONS */
+@media (max-width: 768px) {
+    /* ... Otros estilos responsive ... */
+  
+    /* Oculta inicialmente el submenú de marcas en la versión móvil */
+    .mobile-solutions-submenu {
+      display: none;
+    }
+  
+    /* Muestra el submenú cuando la clase mobile-brands-submenu-open está presente */
+    .mobile-solutions-submenu.mobile-solutions-submenu-open {
+      display: block;
+      margin-top: 8px; /* Ajusta la cantidad según sea necesario */
+    }
+
+    .sidebar-sub-menu-item .arrow-icon-sidebar a {
+    padding-left: 14px; /* Ajusta la cantidad de espacio según tus preferencias */
+    }
+  }
+
+/* BRANDS */
 @media (max-width: 768px) {
     /* ... Otros estilos responsive ... */
   
@@ -236,8 +277,6 @@
     display: none; /* Oculta el submenú por defecto */
 }
 
-
-
 }
 
 
@@ -275,6 +314,8 @@
         display: none; /* Oculta el submenú por defecto */
     }
 }
+
+
 
 
 
