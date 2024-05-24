@@ -1,5 +1,3 @@
-
-
 // ESTE ES EL SCRIPT DE JS PARA LA SIDEBAR QUE INCLUYE EL EFECTO DE QUE CUANDO DOY CLICK EN CUALQUIER PARTE O EN EL BOTON CLOSE AUTOMATICAMENTE SE CIERRE LA SIDEBAR.....
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -34,28 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-
-
-
-// SIDEBAR "BRANDS" ARROW CLICK EVENT
-
-
-/**
- *document.addEventListener('DOMContentLoaded', function() {
-  const brandsLink = document.querySelector('.sidebar-sub-menu-item');
-  const brandsSubMenu = brandsLink.querySelector('.brands-submenu');
-  const arrowIcon = brandsLink.querySelector('.arrow-icon-sidebar');
-
-  brandsLink.addEventListener('click', function(event) {
-      event.preventDefault();
-      brandsSubMenu.classList.toggle('brands-submenu-open'); // Toggle the class
-
-      // Cambia la clase de la flecha sin aplicar ninguna rotación
-      arrowIcon.classList.toggle('arrow-icon-flipped');
-  });
-});
- */
-
 
 
 
@@ -98,8 +74,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// SCRIPT PARA LAS SECCIONES DE RESEARCH, SOLUTIONS & PORTFOLIO EN RESPONSIVE DESIGN
+// SCRIPT ADAPTADO PARA LA VERSION MOVILE RESEARCH
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileResearchLink = document.getElementById('mobile-research-link');
+  const mobileResearchSubMenu = document.querySelector('.mobile-research-submenu');
+  const mobileArrowIcon = document.querySelector('#mobile-research-link .arrow-icon-sidebar');
 
+  mobileResearchLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    mobileResearchSubMenu.classList.toggle('mobile-research-submenu-open');
+    mobileArrowIcon.classList.toggle('arrow-icon-flipped');
+  });
+});
 
+// SCRIPT ADAPTADO PARA LA VERSION MOVILE SOLUTIONS
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileSolutionsLink = document.getElementById('mobile-solutions-link');
+  const mobileSolutionsSubMenu = document.querySelector('.mobile-solutions-submenu');
+  const mobileArrowIcon = document.querySelector('#mobile-solutions-link .arrow-icon-sidebar');
+
+  mobileSolutionsLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    mobileSolutionsSubMenu.classList.toggle('mobile-solutions-submenu-open');
+    mobileArrowIcon.classList.toggle('arrow-icon-flipped');
+  });
+});
 
 
